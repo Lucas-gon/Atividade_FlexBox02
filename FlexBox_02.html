@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resolução Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0f172a;
+        color: #f8fafc;
+        font-family: "Segoe UI", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .base {
+        width: 100%;
+        max-width: 800px;
+        background-color: #d0d3d4;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        display: flex;
+        min-height: 120px;
+        padding: 10px;
+      }
+
+      .flex-item {
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .box1 {
+        background-color: #63b1bc;
+      }
+      .box2 {
+        background-color: #1f2a44;
+      }
+      .box3 {
+        background-color: #ed145b;
+      }
+      .box4 {
+        background-color: #efb661;
+      }
+
+      .container1 {
+        justify-content: flex-start;
+      }
+      .container2 {
+        justify-content: flex-end;
+      }
+      .container3 {
+        justify-content: center;
+      }
+      .container4 {
+        justify-content: space-between;
+      }
+      .container5 {
+        justify-content: space-around;
+      }
+      .container6 {
+        justify-content: space-evenly;
+      }
+
+      .container-exercicioB {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 400px;
+      }
+
+      .container-desafio {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+
+      h2 {
+        margin: 20px 0 10px 0;
+        font-size: 1.1rem;
+        color: #38bdf8;
+        width: 100%;
+        max-width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercícios de Flexbox</h1>
+
+    <h2>1. Alinhado ao início</h2>
+    <div class="base container1">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+
+    <h2>2. Alinhado ao final</h2>
+    <div class="base container2">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+
+    <h2>3. Centralizado</h2>
+    <div class="base container3">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+
+    <h2>4. Space-between (Extremidades)</h2>
+    <div class="base container4">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+
+    <h2>5. Space-around (Espaço ao redor)</h2>
+    <div class="base container5">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+
+    <h2>6. Space-evenly (Espaço igual)</h2>
+    <div class="base container6">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+
+    <h2>Exercício B: Coluna Invertida</h2>
+    <div class="base container-exercicioB">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+
+    <h2>Desafio: Ordem Inversa à Esquerda</h2>
+    <div class="base container-desafio">
+      <div class="flex-item box1">1</div>
+      <div class="flex-item box2">2</div>
+      <div class="flex-item box3">3</div>
+      <div class="flex-item box4">4</div>
+    </div>
+  </body>
+</html>
